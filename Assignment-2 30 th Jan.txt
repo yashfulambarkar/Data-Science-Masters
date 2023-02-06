@@ -1,0 +1,129 @@
+1. Write a program to accept percentage from the user and display the grade according to the following 
+   criteria: 
+
+ Marks        Grade 
+>90             A 
+>80 and <=90    B 
+>=60 and <=80   C 
+below 60        D 
+
+
+percentage=int(input())
+
+if percentage>90:
+    print("Grade: A")
+elif 80<percentage<=90:
+    print("Grade: B")
+elif 60<=percentage<=80:
+    print("Grade: C")
+else:
+    print("Grade: D")
+
+
+2.  Write a program to accept the cost price of a bike and display the road tax to be paid according to the 
+    following criteria: 
+
+Tax    Cost Price(in Rs)
+15%       >100000 
+10%     50000 and <= 100000
+5%         <= 50000 
+ 
+
+Cost_Price=int(input())
+if Cost_Price>100000:
+    print("Total tax to be paid of Rupees: ",Cost_Price*0.15)
+elif Cost_Price>50000 and Cost_Price<=100000:
+    print("Total tax to be paid of Rupees: ",Cost_Price*0.10)
+else:
+    print("Total tax to be paid of Rupees: ",Cost_Price*0.05)
+
+
+3. Accept any city from the user and display monuments of that city.
+ 
+City     Monument 
+Delhi    Red Fort 
+Agra     Taj Mahal
+Jaipur   Jal Mahal
+ 
+
+City=input()
+if City=='Delhi':
+    print(f'The Monument of {City} is Red Fort')
+elif City=='Agra':
+    print(f'The Monument of {City} is Taj Mahal')
+elif City=='Jaipur':
+    print(f'The Monument of {City} is Jal Mahal')
+else:
+    pass
+
+4. Check how many times a given number can be divided by 3 before it is less than or equal to 10. 
+
+n=int(input())
+c=0
+while n<=10:
+    if n%3==0:
+        c+=1
+    n+=1
+print(c)
+
+
+
+5. Why and When to Use while Loop in Python give a detailed description with example 
+
+:- A "While" Loop is used to repeat a specific block of code an unknown number of times, until a condition is met.
+   
+count = 1
+while (count <=10):
+    print 'The count is:', count
+    count = count + 1
+print "Good bye!"
+   
+The block above, consisting of the print and increment statements, is executed repeatedly until count is no longer less than or equal to 10.
+With each iteration, the current value of the index count is displayed and then increased by 1.
+
+
+6. Use nested while loop to print 3 different pattern. 
+
+a.
+
+n=int(input())
+i=1
+while i<=n:
+    j=1
+    while j<=i:
+        print('*',end=" ")
+        j=j+1
+    print()
+    i=i+1
+
+b.
+
+n=int(input())
+i=1
+while i<=n:
+    print(" "*(n-i)+"*"*i)
+    i=i+1
+
+c.
+
+n=int(input())
+i=1
+while i<=n:
+    print("*"*n)
+    i=i+1
+
+
+
+7.  Reverse a while loop to display numbers from 10 to 1. 
+
+i=10
+while i>0:
+    print(i)
+    i=i-1
+
+
+
+
+
+
+
